@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog page</title>
+    <!-- tailwind and daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- internal css -->
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+
+    <!-- Tailwind configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              btn_primary: "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="lexend-font">
+    <header>
+      <nav class="bg-[#F9F7F3] mb-2 lg:mb-12">
+        <div
+          class="lg:w-11/12 mx-auto flex justify-between items-center py-6 px-1 lg:pt-6 lg:pb-16"
+        >
+          <button
+            id="home-btn"
+            class="font-semibold lg:text-xl bg-btn_primary lg:py-3 lg:px-8 py-1 px-6 rounded-lg"
+          >
+            Home
+          </button>
+          <div class="flex items-center gap-1 lg:gap-3">
+            <img
+              class="w-8 h-8 lg:w-12 lg:h-12"
+              src="./assets/logo.png"
+              alt="logo"
+            />
+            <h1 class="font-semibold lg:text-xl">Donate Bangladesh</h1>
+          </div>
+          <div class="flex items-center gap-1 lg:gap-3">
+            <img
+              class="w-5 h-5 lg:w-7 lg:h-7"
+              src="./assets/coin.png"
+              alt="coin"
+            />
+            <p class="font-medium lg:text-xl">5500 <span>BDT</span></p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="lg:w-11/12 mx-auto py-6 px-1">
+      <h2 class="text-4xl font-bold mb-6 lg:mb-10">
+        Important FAQ <i class="fa-regular fa-circle-question"></i>
+      </h2>
+      <div class="collapse collapse-arrow bg-gray-100">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p class="text-gray-500">
+            The DOM (Document Object Model) is a tree structure that represents
+            HTML or XML documents, enabling dynamic interaction and manipulation
+            of the document. It allows developers to access and modify elements
+            and content using JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-gray-100">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          How do you select an element from the DOM?
+        </div>
+        <div class="collapse-content">
+          <p class="text-gray-500">
+            You can select an element from the DOM using methods like
+            getElementById, querySelector, or getElementsByClassName. Each
+            method allows you to target elements based on their ID, CSS
+            selectors, or class names, respectively.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-gray-100">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the event delegation in the context of the DOM, and why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p class="text-gray-500">
+            Event delegation is a technique in the DOM where a single event
+            listener is added to a parent element to manage events for its child
+            elements, instead of adding listeners to each child individually.
+            This approach improves performance and simplifies code management,
+            especially for dynamically added elements.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-gray-100">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element's attribute, styles using the DOM?
+        </div>
+        <div class="collapse-content">
+          <p class="text-gray-500">
+            You can manipulate an element's attributes using methods like
+            setAttribute or by directly accessing properties on the element,
+            such as element.src for images. To change an element's style, you
+            can modify its style property, allowing you to set CSS styles
+            directly in JavaScript.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+      document
+        .getElementById("home-btn")
+        .addEventListener("click", function () {
+          window.location.href = "./index.html";
+        });
+    </script>
+  </body>
+</html>
