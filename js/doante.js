@@ -6,15 +6,26 @@ document
     const inputNoakhali = document.getElementById("input-noakhali");
     const inputNoakhaliValue = parseFloat(inputNoakhali.value);
 
+    // my balance
+    const myBalance = document.getElementById("my-balance");
+    const myBalanceNumber = parseFloat(myBalance.innerText);
+
+    // validation
+    if (isNaN(inputNoakhaliValue) || inputNoakhaliValue <= 0) {
+      alert("Invalid Input");
+      return;
+    }
+
+    if (inputNoakhaliValue >= myBalanceNumber) {
+      alert("Invalid Input");
+      return;
+    }
+
     // donated money
     const donatedNoakhaliMoney = document.getElementById(
       "donated-noakhali-money"
     );
     const noakhaliMoney = parseFloat(donatedNoakhaliMoney.innerText);
-
-    // my balance
-    const myBalance = document.getElementById("my-balance");
-    const myBalanceNumber = parseFloat(myBalance.innerText);
 
     // calculation
     const myNewBalance = myBalanceNumber - inputNoakhaliValue;
@@ -30,7 +41,7 @@ document
     const div = document.createElement("div");
     div.className = "border rounded-lg p-8";
     div.innerHTML = `
-        <h4 class= "font-bold text-xl">${inputNoakhaliValue} Taka is donated for ${headingNoakhali}</h4>
+        <h4 class= "font-semibold lg:font-bold  lg:text-xl">${inputNoakhaliValue} Taka is donated for ${headingNoakhali}</h4>
         <p class = "p-1 bg-gray-100 rounded-md">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
     `;
 
@@ -45,18 +56,28 @@ document
     const inputFeni = document.getElementById("input-feni");
     const inputFeniValue = parseFloat(inputFeni.value);
 
-    // donated money
-    const donatedFeniMoney = document.getElementById("donated-feni-money");
-    const feniMoney = parseFloat(donatedFeniMoney.innerText);
-
     // my balance
     const myBalance = document.getElementById("my-balance");
     const myBalanceNumber = parseFloat(myBalance.innerText);
 
+    // validation
+    if (isNaN(inputFeniValue) || inputFeniValue <= 0) {
+      alert("Invalid Input");
+      return;
+    }
+
+    if (inputFeniValue >= myBalanceNumber) {
+      alert("Invalid Input");
+      return;
+    }
+
+    // donated money
+    const donatedFeniMoney = document.getElementById("donated-feni-money");
+    const feniMoney = parseFloat(donatedFeniMoney.innerText);
+
     // calculation
     const myNewBalance = myBalanceNumber - inputFeniValue;
     myBalance.innerText = myNewBalance;
-    console.log(myNewBalance);
 
     donatedFeniMoney.innerText = inputFeniValue + feniMoney;
 
@@ -67,7 +88,7 @@ document
     const div = document.createElement("div");
     div.className = "border rounded-lg p-8";
     div.innerHTML = `
-        <h4 class= "font-bold text-xl">${inputFeniValue} Taka is donated for ${headingFeni}</h4>
+        <h4 class= "font-semibold lg:font-bold  lg:text-xl">${inputFeniValue} Taka is donated for ${headingFeni}</h4>
         <p class = "p-1 bg-gray-100 rounded-md">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
     `;
 
@@ -82,15 +103,26 @@ document
     const inputInjured = document.getElementById("input-injured");
     const inputInjuredValue = parseFloat(inputInjured.value);
 
+    // my balance
+    const myBalance = document.getElementById("my-balance");
+    const myBalanceNumber = parseFloat(myBalance.innerText);
+
+    // validation
+    if (isNaN(inputInjuredValue) || inputInjuredValue <= 0) {
+      alert("Invalid Input");
+      return;
+    }
+
+    if (inputInjuredValue >= myBalanceNumber) {
+      alert("Invalid Input");
+      return;
+    }
+
     // donated money
     const donatedInjuredMoney = document.getElementById(
       "donated-injured-money"
     );
     const injuredMoney = parseFloat(donatedInjuredMoney.innerText);
-
-    // my balance
-    const myBalance = document.getElementById("my-balance");
-    const myBalanceNumber = parseFloat(myBalance.innerText);
 
     // calculation
     const myNewBalance = myBalanceNumber - inputInjuredValue;
@@ -105,7 +137,7 @@ document
     const div = document.createElement("div");
     div.className = "border rounded-lg p-8";
     div.innerHTML = `
-        <h4 class= "font-bold text-xl">${inputInjuredValue} Taka is donated for ${headingInjured}</h4>
+        <h4 class= "font-semibold lg:font-bold  lg:text-xl">${inputInjuredValue} Taka is donated for ${headingInjured}</h4>
         <p class = "p-1 bg-gray-100 rounded-md">Date: ${new Date().toLocaleDateString()} Time: ${new Date().toLocaleTimeString()}</p>
     `;
 
