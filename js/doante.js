@@ -12,12 +12,12 @@ document
 
     // validation
     if (isNaN(inputNoakhaliValue) || inputNoakhaliValue <= 0) {
-      alert("Invalid Input");
+      alert("lease input a valid number");
       return;
     }
 
     if (inputNoakhaliValue >= myBalanceNumber) {
-      alert("Invalid Input");
+      alert("Error! You can't donate more than your available funds.");
       return;
     }
 
@@ -66,12 +66,12 @@ document
 
     // validation
     if (isNaN(inputFeniValue) || inputFeniValue <= 0) {
-      alert("Invalid Input");
+      alert("Please input a valid number");
       return;
     }
 
     if (inputFeniValue >= myBalanceNumber) {
-      alert("Invalid Input");
+      alert("Error! You can't donate more than your available funds.");
       return;
     }
 
@@ -117,12 +117,12 @@ document
 
     // validation
     if (isNaN(inputInjuredValue) || inputInjuredValue <= 0) {
-      alert("Invalid Input");
+      alert("Please input a valid number");
       return;
     }
 
     if (inputInjuredValue >= myBalanceNumber) {
-      alert("Invalid Input");
+      alert("Error! You can't donate more than your available funds.");
       return;
     }
 
