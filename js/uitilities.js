@@ -8,6 +8,7 @@ function getMyBalanceById(id) {
 function getModal(id) {
   const modalShow = document.getElementById(id);
   modalShow.showModal();
+  return;
 }
 
 // history item function
@@ -24,4 +25,5 @@ function createHistoryItem(id1, id2) {
     `;
 
   historyContainer.insertBefore(div, historyContainer.firstChild);
+  return;
 }
