@@ -38,6 +38,9 @@ document
 
     // show the modal
     getModal("my_modal_1");
+
+    // Clear the form input after submission.
+    document.getElementById("input-noakhali").value = "";
   });
 
 // Feni card
@@ -78,6 +81,9 @@ document
 
     // show the modal
     getModal("my_modal_1");
+
+    // Clear the form input after submission.
+    document.getElementById("input-feni").value = "";
   });
 
 //   Injured card
@@ -120,4 +126,7 @@ document
 
     // show the modal
     getModal("my_modal_1");
+
+    // Clear the form input after submission.
+    document.getElementById("input-injured").value = "";
   });
