@@ -46,6 +46,10 @@ document
     `;
 
     historyContainer.insertBefore(div, historyContainer.firstChild);
+
+    // show the modal
+    const modalShow = document.getElementById("my_modal_1");
+    modalShow.showModal();
   });
 
 // Feni card
@@ -93,6 +97,10 @@ document
     `;
 
     historyContainer.insertBefore(div, historyContainer.firstChild);
+
+    // show the modal
+    const modalShow = document.getElementById("my_modal_1");
+    modalShow.showModal();
   });
 
 //   Injured card
@@ -142,4 +150,8 @@ document
     `;
 
     historyContainer.insertBefore(div, historyContainer.firstChild);
+
+    // show the modal
+    const modalShow = document.getElementById("my_modal_1");
+    modalShow.showModal();
   });

@@ -70,16 +70,17 @@
               src="./assets/coin.png"
               alt="coin"
             />
-            <p id="my-balance" class="font-medium lg:text-xl">5500</p>
+            <p id="my-balance" class="font-medium lg:text-xl">9500</p>
             <span class="font-medium lg:text-xl">BDT</span>
           </div>
         </div>
       </nav>
       <!-- Button section -->
       <section class="pb-6 lg:pb-8">
-        <div class="flex justify-center gap-2 lg:gap-4">
+        <div class="flex justify-center gap-2 lg:gap-6">
           <button
             id="donation-btn"
+            style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
             class="btn btn-xs sm:btn-sm lg:btn-md lg:btn-lg bg-btn_primary"
           >
             Donation
@@ -87,6 +88,7 @@
 
           <button
             id="history-btn"
+            style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px"
             class="btn btn-xs sm:btn-sm lg:btn-md lg:btn-lg"
           >
             History
@@ -140,27 +142,28 @@
               <button
                 id="donate-btn-for-noakhali"
                 class="font-bold border rounded-lg p-5 w-full bg-btn_primary"
-                onclick="my_modal_5.showModal()"
               >
                 Donate Now
               </button>
             </div>
           </div>
+
           <!-- Open the modal using ID.showModal() method -->
-          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+          <dialog id="my_modal_1" class="modal">
             <div class="modal-box flex flex-col justify-center items-center">
               <h2 class="text-3xl font-bold">Congratulations!</h2>
               <img src="./assets/coin.png" alt="coin" />
-              <p class="py-4">You have donated for humankind.</p>
-              <h4 class="text-xl font-bold">Successfully</h4>
+              <p class="py-4">You've donated for humankind.</p>
+              <h4 class="text-lg font-bold">Successfully</h4>
               <div class="modal-action">
                 <form method="dialog">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button class="btn">Close confirmation</button>
+                  <button class="btn">Close Confirmation</button>
                 </form>
               </div>
             </div>
           </dialog>
+          >
 
           <!-- card 2 -->
           <div
@@ -199,7 +202,6 @@
               <button
                 id="donate-btn-for-feni"
                 class="border rounded-lg p-5 w-full bg-btn_primary"
-                onclick="my_modal_5.showModal()"
               >
                 Donate Now
               </button>
@@ -243,7 +245,6 @@
               <button
                 id="donate-btn-for-injured"
                 class="border rounded-lg p-5 w-full bg-btn_primary"
-                onclick="my_modal_5.showModal()"
               >
                 Donate Now
               </button>
