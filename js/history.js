@@ -6,13 +6,11 @@ const historyBtn = document
     document.getElementById("history-btn").classList.add("bg-btn_primary");
     document.getElementById("donation-btn").classList.remove("bg-btn_primary");
 
-    // history section
-    const historySection = document.getElementById("history-section");
-    historySection.classList.remove("hidden");
+    //show the history section
+    document.getElementById("history-section").classList.remove("hidden");
 
-    // card section
-    const cardSection = document.getElementById("card-section");
-    cardSection.classList.add("hidden");
+    // hide the card section
+    document.getElementById("card-section").classList.add("hidden");
   });
 
 //   donation btn
@@ -23,11 +21,9 @@ const donationBtn = document
     document.getElementById("donation-btn").classList.add("bg-btn_primary");
     document.getElementById("history-btn").classList.remove("bg-btn_primary");
 
-    // history section
-    const historySection = document.getElementById("history-section");
-    historySection.classList.add("hidden");
+    //hide the history section
+    document.getElementById("history-section").classList.add("hidden");
 
-    // card section
-    const cardSection = document.getElementById("card-section");
-    cardSection.classList.remove("hidden");
+    //show the card section
+    document.getElementById("card-section").classList.remove("hidden");
   });
